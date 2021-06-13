@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Centro Médico Ñuñoa</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Estadísticas Centro Médico Ñuñoa</h1>
+        <div class="card mt-3">
+            <div class="card-body">
+                <h3 class="card-title">Radiología</h3>
+                <p class="mensajeConcatenado"></p>
+                <table class="table table-striped table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col" class="text-center">Hora</th>
+                            <th scope="col" class="text-center">Especialista</th>
+                            <th scope="col" class="text-center">Paciente</th>
+                            <th scope="col" class="text-center">RUT</th>
+                            <th scope="col" class="text-center">Previsión</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card mt-3">
+            <div class="card-body">
+                <h3 class="card-title">Traumatología</h3>
+                <p class="mensajeConcatenado"></p>
+                <table class="table table-striped table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col" class="text-center">Hora</th>
+                            <th scope="col" class="text-center">Especialista</th>
+                            <th scope="col" class="text-center">Paciente</th>
+                            <th scope="col" class="text-center">RUT</th>
+                            <th scope="col" class="text-center">Previsión</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <h3>Pacientes con FONASA</h3>
+                <p id="pacientesFonasa"></p>
+            </div>
+        </div>
+        <div class="card mt-3">
+            <div class="card-body">
+                <h3 class="card-title">Dental</h3>
+                <table class="table table-striped table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col" class="text-center">Hora</th>
+                            <th scope="col" class="text-center">Especialista</th>
+                            <th scope="col" class="text-center">Paciente</th>
+                            <th scope="col" class="text-center">RUT</th>
+                            <th scope="col" class="text-center">Previsión</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <p class="mensajeConcatenado"></p>
+                <h3>Pacientes con Isapre</h3>
+                <p id="pacientesIsapre"></p>
+            </div>
+        </div>
+        <div class="card my-3">
+            <div class="card-body">
+                <h3 class="card-title">Pacientes atendidos</h3>
+                <p class="mensajeConcatenado"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="listado-consultas.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
